@@ -1,0 +1,37 @@
+{
+    "periodicna": [
+        {
+            "dan": 0,
+            "semestar": "zimski",
+            "pocetak": "13:30",
+            "kraj": "15:00",
+            "naziv": "MA",
+            "predavac": "NN"
+        },
+        {
+            "dan": 0,
+            "semestar": "ljetni",
+            "pocetak": "13:30",
+            "kraj": "15:00",
+            "naziv": "VA",
+            "predavac": "ZJ"
+        },
+        {
+            "dan": 4,
+            "semestar": "zimski",
+            "pocetak": "12:00",
+            "kraj": "15:00",
+            "naziv": "VA",
+            "predavac": "NN"
+        }
+    ],
+    "vanredna": [
+        {
+            "datum": "31.12.2019",  
+            "pocetak": "12:00",
+            "kraj": "15:00",
+            "naziv": "1-01",
+            "predavac": "ZJ"
+        }
+    ]
+}

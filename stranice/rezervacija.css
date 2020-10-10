@@ -1,0 +1,170 @@
+body {
+    background: url('https://i.pinimg.com/564x/6c/d3/c9/6cd3c96aa922787735ae65f7dab22612.jpg');
+    background-size: cover;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    clear: both;
+}
+.meni{
+    border:1px solid rgb(32, 2, 46);
+    border-radius: 10px;
+    background-color: rgb(154, 183, 236);
+    text-align: center;
+    margin-bottom: 15px;
+    clear: both; 
+}
+ul {
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+ul li {
+    display: inline;
+    list-style-type: none;
+}
+li {
+    padding: 5px;
+}
+.logo {
+    padding-left: 50px;
+    padding-right: 50px;   
+}
+img {
+    margin-top: -35px;  
+}
+a {
+    margin-top: -5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(70, 36, 77);
+}
+a:hover {
+    color: rgb(158, 47, 66);
+}
+#nounderline {
+    text-decoration: none;
+}
+.sadrzaj { 
+    border:1px solid rgb(32, 2, 46); 
+    border-radius: 10px;
+    clear: both;
+    background-color: rgb(154, 183, 236);
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    margin-bottom: -20px;
+    display: grid;
+}
+
+label {
+    color: rgb(38, 11, 46);
+    font-weight: bold;
+    width: 170px;
+    margin-left: 60px;
+    float: left;
+}
+#mjesec {
+    color: rgb(9, 27, 59);
+    font-weight: bold;
+    margin: 0;
+}
+[name="lista"] {
+    width: 150px;
+}
+[name="rezervacijaPeriodicna"] {
+
+    margin-left: 15px;
+    float: left;
+}
+.dan, .dat {
+    width: 40px;
+    border: 2px solid rgb(13, 6, 39);
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(13, 6, 39);
+}
+.dat {
+    margin-top: 5px;
+    height: 30px;
+    background: linear-gradient(to bottom,white 0%,white 60%,rgb(13, 6, 39) 60%,rgb(13, 6, 39) 67%,rgb(152, 236, 157) 67%,rgb(152, 236, 157) 100%);
+}
+#kalendar {
+    width: 345px;
+    border: 2px solid rgb(13, 6, 39);
+    margin-left: 35px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+.stanje {
+    width: 40px;
+    height: 10px;
+    border-top: 2px solid rgb(13, 6, 39);
+}
+.zauzeta {
+    background: linear-gradient(to bottom,white 0%,white 60%,rgb(13, 6, 39) 60%,rgb(13, 6, 39) 67%,rgb(247, 168, 148) 67%,rgb(247, 168, 148) 100%);
+}
+.slobodna {
+    background-color: rgb(152, 236, 157);
+}
+.invisible {
+    border: 2px solid rgb(154, 183, 236); 
+    overflow: hidden;
+    background: rgb(154, 183, 236) 
+}
+.sesta {
+    display: none;
+}
+button {
+    background-color: rgb(9, 27, 59);
+    width: 100px;
+    border: 2px solid rgb(13, 6, 39);;
+    color: rgb(113, 164, 223);
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 28px;
+    border-radius: 12px;
+}
+button:hover {
+    background-color: rgb(169, 110, 184);
+    color: rgb(30, 2, 41);
+}
+.sljedeci {
+    float: right;
+}
+.prethodni  {
+    padding-left: 23px;
+}
+p {
+    padding-left: 5px;
+}
+@media all and (max-width: 600px) {
+    ul li {
+        display: block;
+        list-style-type: none;
+        text-align: center;
+    }
+    .dan,.dat {
+        display: block;
+        float: inherit;
+        margin: 10px;
+    }
+    .dan {
+        height: 30px;
+    }
+    .prva {
+        margin-top: -308px;
+        margin-left: 50px;
+    }
+    .nema {
+        display: none;
+    }
+    .invisible {
+        display: block;
+    }
+}

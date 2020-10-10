@@ -1,0 +1,97 @@
+body {
+    background: url('https://i.pinimg.com/564x/6c/d3/c9/6cd3c96aa922787735ae65f7dab22612.jpg');
+    background-size: cover;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    clear: both;
+}
+.meni{
+    border:1px solid rgb(32, 2, 46);
+    border-radius: 10px;
+    background-color: rgb(154, 183, 236);
+    text-align: center;
+    margin-bottom: 15px;
+    clear: both; 
+}
+ul {
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+ul li {
+    display: inline;
+    list-style-type: none;
+}
+li {
+    padding: 5px;
+}
+.logo {
+    padding-left: 50px;
+    padding-right: 50px;   
+}
+img {
+    margin-top: -35px;  
+}
+a {
+    margin-top: -5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(70, 36, 77);
+}
+a:hover {
+    color: rgb(158, 47, 66);
+}
+#nounderline {
+    text-decoration: none;
+}
+.sadrzaj { 
+    border:1px solid rgb(32, 2, 46); 
+    border-radius: 10px;
+    clear: both;
+    background-color: rgb(154, 183, 236);
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    margin-bottom: -20px;
+}
+label {
+    color: rgb(30, 2, 41);
+    border-radius: 12px;
+    font-weight: bold;
+    display: block;
+    width: 130px;
+    padding-left: 50px;
+    float: left;
+    margin-right: 10px;
+}
+[type="submit"] {
+    background-color: rgb(9, 27, 59);
+    width: 100px;
+    border: 2px solid rgb(13, 6, 39);;
+    color: rgb(113, 164, 223);
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 28px;
+    border-radius: 12px;
+    margin-left: 170px;
+}
+[type="submit"]:hover {
+    background-color: rgb(169, 110, 184);
+    color: rgb(30, 2, 41);
+}
+@media all and (max-width: 600px) {
+    ul li {
+        display: block;
+        list-style-type: none;
+        text-align: center;
+    }
+    label {
+        float: none;
+        margin-left: -15px;
+    }
+    input {
+        margin-left: 30px;
+    }
+}

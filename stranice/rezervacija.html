@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="sale.css">
+    <link rel="stylesheet" type="text/css" href="rezervacija.css">
+    <script src="kalendar.js"></script>
+    <script src="pozivi.js"></script> 
+    <script src="rezervacija.js"></script> 
+</head>
+<html>
+<body onload="load(kalendar,(new Date()).getMonth())">
+    <div class="meni">
+        <div class="logo">
+            <img src="https://egea.eu/wp-content/uploads/2017/01/EGEA-SARAJEVO-372x300.jpg" width="100px" height="70px" alt="Logo ETF-a">
+        </div>
+        <ul>
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="sale.html">Sale</a></li>
+            <li><a href="unos.html">Unos</a></li>
+            <li><a href="rezervacija.html" id="nounderline">Rezervacije</a></li>
+            <li><a href="osobe.html">Osobe</a></li>
+        </ul>
+    </div>
+    <div id="glavniDio" class="sadrzaj">
+        <form name="forma" onchange="Kalendar.obojiZauzeca(document.getElementById('glavniDIo'),(new Date()).getMonth(),'MA','13:30','15:00')">
+           <label for="sale">Odaberite salu:</label>
+            <select id="sale">
+                <option value="VA">VA</option>
+                <option value="MA">MA</option>
+                <option value="0-01">0-01</option>
+                <option value="0-02">0-02</option>
+                <option value="0-03">0-03</option>
+                <option value="0-04">0-04</option>
+                <option value="0-05">0-05</option>
+                <option value="0-06">0-06</option>
+                <option value="0-07">0-07</option>
+                <option value="0-08">0-08</option>
+                <option value="0-09">0-09</option>
+                <option value="1-01">1-01</option>
+                <option value="1-02">1-02</option>
+                <option value="1-03">1-03</option>
+                <option value="1-04">1-04</option>
+                <option value="1-05">1-05</option>
+                <option value="1-06">1-06</option>
+                <option value="1-07">1-07</option>
+                <option value="1-08">1-08</option>
+                <option value="1-09">1-09</option>
+                <option value="1-10">1-10</option>
+                <option value="1-11">1-11</option>
+                <option value="1-15">1-15</option>
+                </select>
+            <br>
+            <br>
+            <label for="rezervacijaPeriodicna" id="lab">Periodična rezervacija:</label>
+            <input type="checkbox" name="rezervacijaPeriodicna" value="periodicna" id="periodicna">
+            <br>
+            <br>
+            <label for="pocetak">Početak rezervacije:</label>
+            <input type="time" name="pocetak" id="pocetak">
+            <br>
+            <br>
+            <label for="kraj">Kraj rezervacije:</label>
+            <input type="time" name="kraj" id="kraj">
+            <br>
+            <br>
+            <label for="osoblje">Osoblje:</label>
+            <select class="osob" name="osoblje" id="osb"></select>
+        </form>
+        <br>
+        <br>
+        <div id="kalendar">
+            <label id="mjesec"></label>
+         <br> 
+         <br>
+            <div id="dani">
+                <div class="dan"></div> 
+                <div class="dan"></div> 
+                <div class="dan"></div> 
+                <div class="dan"></div> 
+                <div class="dan"></div> 
+                <div class="dan"></div> 
+                <div class="dan"></div>
+            </div>
+            <div class="sedmica">
+                <div id="1" class="dat" onclick="klik(this)"></div>
+                <div id="2" class="dat" onclick="klik(this)"></div>
+                <div id="3" class="dat" onclick="klik(this)"></div>
+                <div id="4" class="dat" onclick="klik(this)"></div>
+                <div id="5" class="dat" onclick="klik(this)"></div>
+                <div id="6" class="dat" onclick="klik(this)"></div>
+                <div id="7" class="dat" onclick="klik(this)"></div>
+            </div>
+            <div class="sedmica">
+                <div id="8" class="dat" onclick="klik(this)"></div>
+                <div id="9" class="dat" onclick="klik(this)"></div>
+                <div id="10" class="dat" onclick="klik(this)"></div>
+                <div id="11" class="dat" onclick="klik(this)"></div>
+                <div id="12" class="dat" onclick="klik(this)"></div>
+                <div id="13" class="dat" onclick="klik(this)"></div>
+                <div id="14" class="dat" onclick="klik(this)"></div>
+            </div>
+            <div class="sedmica">
+                <div id="15" class="dat" onclick="klik(this)"></div>
+                <div id="16" class="dat" onclick="klik(this)"></div>
+                <div id="17" class="dat" onclick="klik(this)"></div>
+                <div id="18" class="dat" onclick="klik(this)"></div>
+                <div id="19" class="dat" onclick="klik(this)"></div>
+                <div id="20" class="dat" onclick="klik(this)"></div>
+                <div id="21" class="dat" onclick="klik(this)"></div>
+            </div>
+            <div class="sedmica">
+                <div id="22" class="dat" onclick="klik(this)"></div>
+                <div id="23" class="dat" onclick="klik(this)"></div>
+                <div id="24" class="dat" onclick="klik(this)"></div>
+                <div id="25" class="dat" onclick="klik(this)"></div>
+                <div id="26" class="dat" onclick="klik(this)"></div>
+                <div id="27" class="dat" onclick="klik(this)"></div>
+                <div id="28" class="dat" onclick="klik(this)"></div>
+            </div>
+            <div class="sedmica">
+                <div id="29" class="dat" onclick="klik(this)"></div>
+                <div id="30" class="dat" onclick="klik(this)"></div>
+                <div id="31" class="dat" onclick="klik(this)"></div>
+                <div id="32" class="dat" onclick="klik(this)"></div>
+                <div id="33" class="dat" onclick="klik(this)"></div>
+                <div id="34" class="dat" onclick="klik(this)"></div>
+                <div id="35" class="dat" onclick="klik(this)"></div>
+            </div>
+            <div class="sedmica">
+                <div id="36" class="dat" onclick="klik(this)"></div>
+                <div id="37" class="dat" onclick="klik(this)"></div>
+                <div id="38" class="dat" onclick="klik(this)"></div>
+                <div id="39" class="dat" onclick="klik(this)"></div>
+                <div id="40" class="dat" onclick="klik(this)"></div>
+                <div id="41" class="dat" onclick="klik(this)"></div>
+                <div id="42" class="dat" onclick="klik(this)"></div>
+            </div>
+        </div>
+        <p>
+            <button  class="prethodni" onclick="prethodni(kalendar)">Prethodni</button>
+            <button class="sljedeci" onclick="sljedeci(kalendar)">Sljedeci</button>
+        </p>
+    </div>
+</body>
+</html>
